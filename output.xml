@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220126 14:55:06.035" rpa="false" schemaversion="2">
+<suite id="s1" name="Inicial" source="C:\Estudo\Robot\inicial.robot">
+<test id="s1-t1" name="Test case 1 - abrir navegador no google">
+<kw name="Dado que eu abra o navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220126 14:55:06.343" level="INFO">Opening browser 'chrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220126 14:55:06.343" endtime="20220126 14:55:07.616"/>
+</kw>
+<status status="PASS" starttime="20220126 14:55:06.343" endtime="20220126 14:55:07.616"/>
+</kw>
+<kw name="Quando a pagina google e exibida">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://google.com.br</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220126 14:55:07.618" level="INFO">Opening url 'http://google.com.br'</msg>
+<status status="PASS" starttime="20220126 14:55:07.617" endtime="20220126 14:55:11.051"/>
+</kw>
+<status status="PASS" starttime="20220126 14:55:07.617" endtime="20220126 14:55:11.052"/>
+</kw>
+<kw name="Então o navegador é fechado">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220126 14:55:11.053" endtime="20220126 14:55:13.240"/>
+</kw>
+<status status="PASS" starttime="20220126 14:55:11.052" endtime="20220126 14:55:13.240"/>
+</kw>
+<status status="PASS" starttime="20220126 14:55:06.342" endtime="20220126 14:55:13.241"/>
+</test>
+<status status="PASS" starttime="20220126 14:55:06.037" endtime="20220126 14:55:13.243"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Inicial">Inicial</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
