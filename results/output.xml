@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220207 20:49:30.262" rpa="false" schemaversion="2">
+<suite id="s1" name="Test-Case" source="C:\Estudo\teste\Robotframework_aula_01_22\test-case">
+<suite id="s1-s1" name="AbrirGoogle" source="C:\Estudo\teste\Robotframework_aula_01_22\test-case\AbrirGoogle.robot">
+<test id="s1-s1-t1" name="Test case 1 - abrir navegador no google">
+<kw name="Dado que eu abra o navegador" library="home">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220207 20:49:30.570" level="INFO">Opening browser 'chrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220207 20:49:30.570" endtime="20220207 20:49:32.182"/>
+</kw>
+<status status="PASS" starttime="20220207 20:49:30.569" endtime="20220207 20:49:32.182"/>
+</kw>
+<kw name="Quando a pagina google e exibida" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://google.com.br</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220207 20:49:32.184" level="INFO">Opening url 'http://google.com.br'</msg>
+<status status="PASS" starttime="20220207 20:49:32.184" endtime="20220207 20:49:33.676"/>
+</kw>
+<status status="PASS" starttime="20220207 20:49:32.183" endtime="20220207 20:49:33.676"/>
+</kw>
+<kw name="Então o navegador é fechado" library="home">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220207 20:49:33.677" endtime="20220207 20:49:35.957"/>
+</kw>
+<status status="PASS" starttime="20220207 20:49:33.676" endtime="20220207 20:49:35.957"/>
+</kw>
+<status status="PASS" starttime="20220207 20:49:30.568" endtime="20220207 20:49:35.958"/>
+</test>
+<status status="PASS" starttime="20220207 20:49:30.294" endtime="20220207 20:49:35.960"/>
+</suite>
+<status status="PASS" starttime="20220207 20:49:30.265" endtime="20220207 20:49:35.964"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Case">Test-Case</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="AbrirGoogle">Test-Case.AbrirGoogle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
