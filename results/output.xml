@@ -1,49 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220207 20:49:30.262" rpa="false" schemaversion="2">
-<suite id="s1" name="Test-Case" source="C:\Estudo\teste\Robotframework_aula_01_22\test-case">
-<suite id="s1-s1" name="AbrirGoogle" source="C:\Estudo\teste\Robotframework_aula_01_22\test-case\AbrirGoogle.robot">
-<test id="s1-s1-t1" name="Test case 1 - abrir navegador no google">
-<kw name="Dado que eu abra o navegador" library="home">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220214 21:12:17.315" rpa="false" schemaversion="2">
+<suite id="s1" name="pesquisarProduto" source="C:\Estudo\TesteDegit\Robotframework_aula_01_22\test-case\pesquisarProduto.robot">
+<test id="s1-t1" name="Cenário 1: Pesquisar um produto existente">
+<kw name="Que Esteja no site http://automationpractice.com/index.php" library="automationHome">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url:</arg>
-<arg>${NAVEGADOR}</arg>
+<arg>http://automationpractice.com/index.php</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220207 20:49:30.570" level="INFO">Opening browser 'chrome' to base url 'url:'.</msg>
-<status status="PASS" starttime="20220207 20:49:30.570" endtime="20220207 20:49:32.182"/>
+<msg timestamp="20220214 21:12:17.592" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220214 21:12:17.592" endtime="20220214 21:12:25.129"/>
 </kw>
-<status status="PASS" starttime="20220207 20:49:30.569" endtime="20220207 20:49:32.182"/>
+<status status="PASS" starttime="20220214 21:12:17.591" endtime="20220214 21:12:25.130"/>
 </kw>
-<kw name="Quando a pagina google e exibida" library="home">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>http://google.com.br</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220207 20:49:32.184" level="INFO">Opening url 'http://google.com.br'</msg>
-<status status="PASS" starttime="20220207 20:49:32.184" endtime="20220207 20:49:33.676"/>
+<kw name="Pesquiso um produto em Search existente">
+<msg timestamp="20220214 21:12:25.136" level="FAIL">No keyword with name 'Pesquiso um produto em Search existente' found.</msg>
+<status status="FAIL" starttime="20220214 21:12:25.136" endtime="20220214 21:12:25.136"/>
 </kw>
-<status status="PASS" starttime="20220207 20:49:32.183" endtime="20220207 20:49:33.676"/>
+<kw name="Pesquiso o produto">
+<status status="NOT RUN" starttime="20220214 21:12:25.146" endtime="20220214 21:12:25.146"/>
 </kw>
-<kw name="Então o navegador é fechado" library="home">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220207 20:49:33.677" endtime="20220207 20:49:35.957"/>
+<kw name="Site deverá trazer os produtos pesquisados">
+<status status="NOT RUN" starttime="20220214 21:12:25.155" endtime="20220214 21:12:25.155"/>
 </kw>
-<status status="PASS" starttime="20220207 20:49:33.676" endtime="20220207 20:49:35.957"/>
-</kw>
-<status status="PASS" starttime="20220207 20:49:30.568" endtime="20220207 20:49:35.958"/>
+<status status="FAIL" starttime="20220214 21:12:17.590" endtime="20220214 21:12:25.156">No keyword with name 'Pesquiso um produto em Search existente' found.</status>
 </test>
-<status status="PASS" starttime="20220207 20:49:30.294" endtime="20220207 20:49:35.960"/>
-</suite>
-<status status="PASS" starttime="20220207 20:49:30.265" endtime="20220207 20:49:35.964"/>
+<status status="FAIL" starttime="20220214 21:12:17.317" endtime="20220214 21:12:25.159"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test-Case">Test-Case</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="AbrirGoogle">Test-Case.AbrirGoogle</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="pesquisarProduto">pesquisarProduto</stat>
 </suite>
 </statistics>
 <errors>
