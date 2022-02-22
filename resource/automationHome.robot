@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *Settings
 Library   SeleniumLibrary
 
@@ -28,3 +29,17 @@ Site deverá trazer os produtos pesquisados
     Wait Until Element Is Visible   ${validation}   5
     Element should be visible    ${validation}
     Close Browser
+=======
+*** Settings ***
+Library  SeleniumLibrary
+
+
+*** Variables ***
+
+#oi mundo 
+
+*** Keywords ***
+
+Que Esteja no site http://automationpractice.com/index.php
+    Open Browser    http://automationpractice.com/index.php     chrome     
+>>>>>>> 711385fb1141c3c290a5a1f55cf4308d30a35636

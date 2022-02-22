@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220214 21:12:17.315" rpa="false" schemaversion="2">
+<suite id="s1" name="pesquisarProduto" source="C:\Estudo\TesteDegit\Robotframework_aula_01_22\test-case\pesquisarProduto.robot">
+<test id="s1-t1" name="Cenário 1: Pesquisar um produto existente">
+<kw name="Que Esteja no site http://automationpractice.com/index.php" library="automationHome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://automationpractice.com/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220214 21:12:17.592" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220214 21:12:17.592" endtime="20220214 21:12:25.129"/>
+</kw>
+<status status="PASS" starttime="20220214 21:12:17.591" endtime="20220214 21:12:25.130"/>
+</kw>
+<kw name="Pesquiso um produto em Search existente">
+<msg timestamp="20220214 21:12:25.136" level="FAIL">No keyword with name 'Pesquiso um produto em Search existente' found.</msg>
+<status status="FAIL" starttime="20220214 21:12:25.136" endtime="20220214 21:12:25.136"/>
+</kw>
+<kw name="Pesquiso o produto">
+<status status="NOT RUN" starttime="20220214 21:12:25.146" endtime="20220214 21:12:25.146"/>
+</kw>
+<kw name="Site deverá trazer os produtos pesquisados">
+<status status="NOT RUN" starttime="20220214 21:12:25.155" endtime="20220214 21:12:25.155"/>
+</kw>
+<status status="FAIL" starttime="20220214 21:12:17.590" endtime="20220214 21:12:25.156">No keyword with name 'Pesquiso um produto em Search existente' found.</status>
+</test>
+<status status="FAIL" starttime="20220214 21:12:17.317" endtime="20220214 21:12:25.159"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="pesquisarProduto">pesquisarProduto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
