@@ -12,4 +12,3 @@ Cenário 1: Pesquisar um produto existente
     Pesquiso o produto 
     #Então 
     Site deverá trazer os produtos pesquisados
-
