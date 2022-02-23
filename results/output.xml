@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220214 21:12:17.315" rpa="false" schemaversion="2">
-<suite id="s1" name="pesquisarProduto" source="C:\Estudo\TesteDegit\Robotframework_aula_01_22\test-case\pesquisarProduto.robot">
-<test id="s1-t1" name="Cenário 1: Pesquisar um produto existente">
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220222 22:10:41.119" rpa="false" schemaversion="2">
+<suite id="s1" name="Test-Case" source="C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\test-case">
+<suite id="s1-s1" name="PesquisarProduto" source="C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\test-case\PesquisarProduto.robot">
+<test id="s1-s1-t1" name="Test case 1 - Pesquisar produto existente">
 <kw name="Que Esteja no site http://automationpractice.com/index.php" library="automationHome">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>http://automationpractice.com/index.php</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220214 21:12:17.592" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" starttime="20220214 21:12:17.592" endtime="20220214 21:12:25.129"/>
+<msg timestamp="20220222 22:10:41.342" level="FAIL">Keyword with same name defined multiple times.</msg>
+<status status="FAIL" starttime="20220222 22:10:41.342" endtime="20220222 22:10:41.342"/>
 </kw>
-<status status="PASS" starttime="20220214 21:12:17.591" endtime="20220214 21:12:25.130"/>
+<kw name="Pesquiso um produto em Search existente" library="automationHome">
+<status status="NOT RUN" starttime="20220222 22:10:41.342" endtime="20220222 22:10:41.342"/>
 </kw>
-<kw name="Pesquiso um produto em Search existente">
-<msg timestamp="20220214 21:12:25.136" level="FAIL">No keyword with name 'Pesquiso um produto em Search existente' found.</msg>
-<status status="FAIL" starttime="20220214 21:12:25.136" endtime="20220214 21:12:25.136"/>
+<kw name="Pesquiso o produto" library="automationHome">
+<status status="NOT RUN" starttime="20220222 22:10:41.343" endtime="20220222 22:10:41.343"/>
 </kw>
-<kw name="Pesquiso o produto">
-<status status="NOT RUN" starttime="20220214 21:12:25.146" endtime="20220214 21:12:25.146"/>
+<kw name="Site deverá trazer os produtos pesquisados" library="automationHome">
+<status status="NOT RUN" starttime="20220222 22:10:41.343" endtime="20220222 22:10:41.343"/>
 </kw>
-<kw name="Site deverá trazer os produtos pesquisados">
-<status status="NOT RUN" starttime="20220214 21:12:25.155" endtime="20220214 21:12:25.155"/>
-</kw>
-<status status="FAIL" starttime="20220214 21:12:17.590" endtime="20220214 21:12:25.156">No keyword with name 'Pesquiso um produto em Search existente' found.</status>
+<tag>regressivo</tag>
+<status status="FAIL" starttime="20220222 22:10:41.341" endtime="20220222 22:10:41.344">Keyword with same name defined multiple times.</status>
 </test>
-<status status="FAIL" starttime="20220214 21:12:17.317" endtime="20220214 21:12:25.159"/>
+<status status="FAIL" starttime="20220222 22:10:41.147" endtime="20220222 22:10:41.345"/>
+</suite>
+<status status="FAIL" starttime="20220222 22:10:41.121" endtime="20220222 22:10:41.347"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">regressivo</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="pesquisarProduto">pesquisarProduto</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test-Case">Test-Case</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PesquisarProduto">Test-Case.PesquisarProduto</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220222 22:10:41.151" level="ERROR">Error in resource file 'C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\resource\automationHome.robot': Creating keyword 'Que Esteja no site http://automationpractice.com/index.php' failed: Keyword with same name defined multiple times.</msg>
 </errors>
 </robot>

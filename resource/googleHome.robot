@@ -27,7 +27,3 @@ Quando a pagina google e exibida
 
 Então o navegador é fechado 
     Close Browser
-<<<<<<< HEAD
-
-=======
->>>>>>> 711385fb1141c3c290a5a1f55cf4308d30a35636
