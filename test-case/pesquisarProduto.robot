@@ -1,6 +1,8 @@
 *Settings
 Resource    ../resource/automationHome.robot
  
+
+ 
 *Test Cases
 Test case 1 - Pesquisar produto existente
     [Tags]      regressivo

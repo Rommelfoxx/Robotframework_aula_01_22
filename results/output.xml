@@ -1,41 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220222 22:10:41.119" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220222 22:20:56.670" rpa="false" schemaversion="2">
 <suite id="s1" name="Test-Case" source="C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\test-case">
 <suite id="s1-s1" name="PesquisarProduto" source="C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\test-case\PesquisarProduto.robot">
 <test id="s1-s1-t1" name="Test case 1 - Pesquisar produto existente">
 <kw name="Que Esteja no site http://automationpractice.com/index.php" library="automationHome">
-<msg timestamp="20220222 22:10:41.342" level="FAIL">Keyword with same name defined multiple times.</msg>
-<status status="FAIL" starttime="20220222 22:10:41.342" endtime="20220222 22:10:41.342"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220222 22:20:56.911" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220222 22:20:56.911" endtime="20220222 22:21:04.937"/>
+</kw>
+<status status="PASS" starttime="20220222 22:20:56.911" endtime="20220222 22:21:04.937"/>
 </kw>
 <kw name="Pesquiso um produto em Search existente" library="automationHome">
-<status status="NOT RUN" starttime="20220222 22:10:41.342" endtime="20220222 22:10:41.342"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_search}</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220222 22:21:04.938" level="INFO">Typing text 'dress' into text field '//input[@placeholder="Search"]'.</msg>
+<status status="PASS" starttime="20220222 22:21:04.938" endtime="20220222 22:21:05.010"/>
+</kw>
+<status status="PASS" starttime="20220222 22:21:04.937" endtime="20220222 22:21:05.011"/>
 </kw>
 <kw name="Pesquiso o produto" library="automationHome">
-<status status="NOT RUN" starttime="20220222 22:10:41.343" endtime="20220222 22:10:41.343"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220222 22:21:05.012" level="INFO">Clicking element '//button[@name="submit_search"]'.</msg>
+<status status="PASS" starttime="20220222 22:21:05.012" endtime="20220222 22:21:06.231"/>
+</kw>
+<status status="PASS" starttime="20220222 22:21:05.011" endtime="20220222 22:21:06.231"/>
 </kw>
 <kw name="Site deverá trazer os produtos pesquisados" library="automationHome">
-<status status="NOT RUN" starttime="20220222 22:10:41.343" endtime="20220222 22:10:41.343"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${validation}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220222 22:21:06.232" endtime="20220222 22:21:06.256"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${validation}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220222 22:21:06.274" level="INFO">Element '//img[contains(@alt,'Dress')]' is displayed.</msg>
+<status status="PASS" starttime="20220222 22:21:06.256" endtime="20220222 22:21:06.274"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220222 22:21:06.274" endtime="20220222 22:21:08.390"/>
+</kw>
+<status status="PASS" starttime="20220222 22:21:06.232" endtime="20220222 22:21:08.390"/>
 </kw>
 <tag>regressivo</tag>
-<status status="FAIL" starttime="20220222 22:10:41.341" endtime="20220222 22:10:41.344">Keyword with same name defined multiple times.</status>
+<status status="PASS" starttime="20220222 22:20:56.905" endtime="20220222 22:21:08.390"/>
 </test>
-<status status="FAIL" starttime="20220222 22:10:41.147" endtime="20220222 22:10:41.345"/>
+<status status="PASS" starttime="20220222 22:20:56.702" endtime="20220222 22:21:08.392"/>
 </suite>
-<status status="FAIL" starttime="20220222 22:10:41.121" endtime="20220222 22:10:41.347"/>
+<status status="PASS" starttime="20220222 22:20:56.670" endtime="20220222 22:21:08.395"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">regressivo</stat>
+<stat pass="1" fail="0" skip="0">regressivo</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test-Case">Test-Case</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="PesquisarProduto">Test-Case.PesquisarProduto</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Case">Test-Case</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="PesquisarProduto">Test-Case.PesquisarProduto</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220222 22:10:41.151" level="ERROR">Error in resource file 'C:\Users\T&amp;T\Desktop\Aulas\QA\Avançado\Robotframework_aula_01_22\resource\automationHome.robot': Creating keyword 'Que Esteja no site http://automationpractice.com/index.php' failed: Keyword with same name defined multiple times.</msg>
 </errors>
 </robot>
